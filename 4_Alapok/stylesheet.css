@@ -1,0 +1,60 @@
+body{
+
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 40px;
+}
+
+.occupation{
+
+    color: pink;
+    font-weight: 700;
+
+}
+
+img{
+
+    width: 250px;
+    border-radius: 50%;
+
+}
+
+.gombok{
+
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    
+
+}
+
+.gombok:hover{
+
+    color: pink;
+    font-weight: 1000;
+
+}
+
+.profile_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.profile_links{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
