@@ -1,0 +1,59 @@
+body{
+
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+
+}
+.profile{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+h1{
+
+    font-size: 40px;
+
+}
+.profession{
+
+    color: aqua;
+    font-weight: 700;
+}
+
+img{
+
+    width: 250px;
+    border-radius: 50%;
+
+}
+.button{
+
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+
+}
+.links{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.button:hover{
+
+    color: aqua;
+    font-weight: 1000;
+
+}
