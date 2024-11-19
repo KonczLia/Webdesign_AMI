@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(181, 181, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 12pt;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 16pt;
+}
+
+.navdoboz {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: black;
+  color: rgb(181, 181, 252);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 5px solid #000;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: rgb(181, 181, 252);
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  transition: height 0.3s ease, font-size 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-item:hover .project-title {
+  height: 80px;
+  font-size: 20px;
+}
+.lábléc {
+  background-color: black;
+  color: rgb(181, 181, 252);
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.oszlop,
+.oszloplogo {
+  padding: 16px;
+  box-sizing: border-box;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.oszlop h3,
+.oszlop p {
+  margin: 5px;
+}
+
+.picilogo {
+  height: 100%;
+  object-fit: contain;
+}

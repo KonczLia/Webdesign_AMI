@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(181, 181, 252);
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 16pt;
+}
+
+.navdoboz {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: black;
+  color: rgb(181, 181, 252);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main-image {
+  width: 40%;
+  max-width: 400px;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+
+.text-container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24pt;
+  color: black;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 14pt;
+  line-height: 1.6;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .image-text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image {
+    width: 80%;
+    max-width: none;
+  }
+
+  .text-container {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.lábléc {
+  background-color: black;
+  color: rgb(181, 181, 252);
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.oszlop,
+.oszloplogo {
+  padding: 16px;
+  box-sizing: border-box;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.oszlop h3,
+.oszlop p {
+  margin: 5px;
+}
+
+.picilogo {
+  height: 100%;
+  object-fit: contain;
+}

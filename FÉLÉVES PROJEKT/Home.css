@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(181, 181, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 12pt;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 16pt;
+}
+
+.navdoboz {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: black;
+  color: rgb(181, 181, 252);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+}
+
+.hero {
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid #000;
+  border-radius: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.image-container {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-box {
+  flex: 1;
+  height: 100%;
+  background-color: black;
+  color: rgb(181, 181, 252);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.text-box:hover {
+  flex: 1.5;
+  color: white;
+}
+
+.text-box h1,
+.text-box p {
+  margin: 10px 0;
+}
+
+.Introduction {
+  max-width: 100%;
+}
+
+.lábléc {
+  background-color: black;
+  color: rgb(181, 181, 252);
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.oszlop,
+.oszloplogo {
+  padding: 16px;
+  box-sizing: border-box;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.oszlop h3,
+.oszlop p {
+  margin: 5px;
+}
+
+.picilogo {
+  height: 100%;
+  object-fit: contain;
+}
