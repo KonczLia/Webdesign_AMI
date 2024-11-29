@@ -3,11 +3,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  margin: 0 10% 0 10%;
   font-family: "Quicksand", sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
   font-size: 12pt;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -15,18 +21,18 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  padding: 50px 50px;
+  padding: 5% 5%;
   box-sizing: border-box;
 }
 
 .logo {
-  width: 300px;
-  padding-bottom: 10px;
+  width: 30%;
+  padding-bottom: 1%;
 }
 
 .navigation {
   display: flex;
-  gap: 20px;
+  gap: 2%;
   font-size: 16pt;
 }
 
@@ -128,4 +134,32 @@ a:hover {
 .picilogo {
   height: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lábléc {
+    font-size: small;
+  }
+}
+@media (max-width: 900px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .lábléc {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .picilogo {
+    height: 50px;
+    align-self: flex-end;
+  }
 }

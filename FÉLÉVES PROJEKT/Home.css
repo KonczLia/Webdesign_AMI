@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  margin: 0 10% 0 10%;
   font-family: "Quicksand", sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -21,18 +21,18 @@ main {
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  padding: 50px;
+  padding: 5% 5%;
   box-sizing: border-box;
 }
 
 .logo {
-  width: 300px;
-  padding-bottom: 10px;
+  width: 30%;
+  padding-bottom: 1%;
 }
 
 .navigation {
   display: flex;
-  gap: 20px;
+  gap: 2%;
   font-size: 16pt;
 }
 
@@ -117,13 +117,14 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-around;
+  height: 150px;
 }
 
 .oszlop,
 .oszloplogo {
   padding: 16px;
   box-sizing: border-box;
-  height: 130px;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,9 +133,26 @@ a:hover {
 .oszlop h3,
 .oszlop p {
   margin: 5px;
+  height: 90%;
 }
 
 .picilogo {
   height: 100%;
   object-fit: contain;
+}
+@media (max-width: 1200px) {
+  .lábléc {
+    font-size: small;
+  }
+}
+@media (max-width: 720px) {
+  .lábléc {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .picilogo {
+    height: 50px;
+    align-self: flex-end;
+  }
 }
